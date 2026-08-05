@@ -1,0 +1,31 @@
+---
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+    const cafes = await getCollection("cafes");
+
+    return cafes.map((cafe) => ({
+        params: { slug: cafe.id },
+        props: { cafe },
+    }));
+}
+
+const { cafe } = Astro.props;
+const { Content } = await render(cafe);
+
+import Layout from "@layouts/Layout.astro";
+import Hero from "@components/Hero.astro";
+import StickyNavigation from "@components/StickyNavigation.astro";
+---
+
+<!-- <Layout theme={cafe.data.theme} title={cafe.data.title}>
+    <Hero hero={cafe.data.hero} title={cafe.data.title} description={cafe.data.description} />
+
+    <img src={cafe.data.origin.image.url} alt={cafe.data.origin.image.alt} />
+    <Content />
+    <StickyNavigation />
+</Layout>
+
+<style>
+
+</style> -->

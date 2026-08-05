@@ -1,0 +1,46 @@
+---
+import OriginSVG from "@assets/origin.svg";
+import ProcessSVG from "@assets/process.svg";
+import PreparationSVG from "@assets/preparation.svg";
+import GallerySVG from "@assets/gallery.svg";
+
+---
+
+
+<div class="fixed bottom-0 bg-inherit w-full z-50 border-t border-gray-200">
+    <ul class="flex justify-center items-center space-x-4 py-2 gap-4">
+        <li class="flex flex-col justify-center items-center">
+            <a href="#origen" class="flex flex-col justify-center items-center">
+                <OriginSVG class="w-6 h-6" />
+                <span>Origen</span>
+            </a>
+        </li>
+        <li class="flex flex-col justify-center items-center">
+            <a href="#proceso" class="flex flex-col justify-center items-center">
+                <ProcessSVG class="w-6 h-6" />
+                <span>Proceso</span>
+            </a>
+        </li>
+        <li class="flex flex-col justify-center items-center">
+            <a href="#preparacion" class="flex flex-col justify-center items-center">
+                <PreparationSVG class="w-6 h-6"/>
+                <span>Preparación</span>
+            </a>
+        </li>
+        <li class="flex flex-col justify-center items-center">
+            <a href="#galeria" class="flex flex-col justify-center items-center">
+                <GallerySVG class="w-6 h-6" />
+                <span>Galería</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<style>
+    a {
+        font-size: x-small;
+        span {
+            opacity: 0.8;
+        }
+    }
+</style>

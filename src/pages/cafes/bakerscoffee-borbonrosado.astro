@@ -1,0 +1,156 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Hero from "@components/Hero.astro";
+import StickyNavigation from "@components/StickyNavigation.astro";
+
+const hero = {
+    image: {
+        url: "https://res.cloudinary.com/dr5knskbb/image/upload/v1785919029/bakersocffee-hero_nnyhjy.webp",
+        alt: "Bakers Coffee - Borbon Rosado",
+    },
+    title: "Bakers Coffee",
+    description: `Pan y café nacen del mismo principio:
+    Respetar el tiempo.
+    Fermentamos nuestra masa madre con paciencia y elegimos cafés de origen que honran el trabajo de quienes los cultivan.`,
+};
+
+const origin = {
+    image: {
+        url: "https://res.cloudinary.com/dr5knskbb/image/upload/v1785922459/bakerscoffee-origin-banner_oxcrqc.webp",
+        alt: "Planta de café",
+    },
+};
+---
+
+<Layout theme="bakerscoffee" title="Bakers Coffee - Borbon Rosado">
+    <Hero
+        image={hero.image}
+        title={hero.title}
+        description={hero.description}
+    />
+    <section id="origen">
+        <h2 class="text-center">Origen</h2>
+        <img src={origin.image.url} alt={origin.image.alt} />
+        <p>
+            En las montañas de <strong>Timaná, Huila</strong>, la finca <strong
+                >La Providencia</strong
+            > se encuentra a <strong>1.600 metros sobre el nivel del mar</strong>,
+            una altitud donde las noches frescas y los días templados permiten que
+            el café madure lentamente. Este ritmo natural favorece el desarrollo de
+            azúcares y una mayor complejidad en la taza.
+        </p>
+        <img
+            src="https://res.cloudinary.com/dr5knskbb/image/upload/v1785924172/bakerscoffee-productor_kp42jt.webp"
+            alt="Productor de café Armando Morales"
+        />
+    
+        <div class="flex items-center justify-center mt-4">
+            <audio controls>
+                <source
+                    src="https://res.cloudinary.com/dr5knskbb/video/upload/v1785924835/audio-productor_v3a06l.ogg"
+                    type="audio/ogg"
+                />
+                No se puede reproducir el audio en este navegador.
+            </audio>
+        </div>
+
+        <p>
+            Detrás de este café hay personas que conocen cada árbol, cada cosecha y cada cambio del clima. Armando Morales combina dos oficios que forman parte de su vida diaria. Además de cultivar café en la finca, dirige un taller mecánico en Pitalito, alternando su tiempo entre el campo y la ciudad. Esa doble dedicación refleja una realidad común en muchas familias cafeteras, donde la pasión por el café convive con otras actividades que ayudan a sostener el hogar, sin perder el compromiso por producir un café de la mejor calidad posible.
+        </p>
+    </section>
+    <section id="proceso">
+        <h2 class="text-center">Proceso de producción</h2>
+        <img src="https://res.cloudinary.com/dr5knskbb/image/upload/v1785925603/proceso-fermentacion_h5wzeo.webp" alt="Proceso de fermentación del café">
+        
+        <p>
+            Solo se recolectan cerezas en su punto óptimo de maduración para garantizar la mejor calidad del fruto. Posteriormente, el café pasa por una fermentación anaeróbica de 72 horas, un proceso sin oxígeno que potencia el dulzor, la complejidad aromática y resalta las notas características de este café.
+        </p>
+        
+        <video controls>
+            <source
+                    src="https://res.cloudinary.com/dr5knskbb/video/upload/v1785925635/proceso-despulpado_yh98j2.mp4"
+                    type="video/mp4"
+                />
+                No se puede reproducir el video en este navegador.
+        </video>
+
+        <p>
+            Tras la fermentación en cereza, el café se despulpa para retirar la pulpa y pasa por una segunda fermentación controlada en tanque. Este proceso termina de desarrollar sus compuestos aromáticos, aportando mayor limpieza, equilibrio y definición al perfil en taza.
+        </p>
+
+        <img src="https://res.cloudinary.com/dr5knskbb/image/upload/v1785925962/secadero-marquesina_jxhc8k.webp" alt="Secadero de marquesinas">
+        
+        <p>
+            El café se seca lentamente enmarquesinas, donde la temperatura y la ventilación se controlan de forma natural para lograr un secado uniforme. Durante esta etapa el grano adquiere un tono más oscuro, resultado de la fermentación previa, mientras termina de desarrollar los compuestos que aportan mayor dulzor, estabilidad y complejidad a la taza.
+        </p>
+
+        <img src="https://res.cloudinary.com/dr5knskbb/image/upload/v1785926121/cafe-verde_jvpqrt.webp" alt="Café verde listo para el tueste">
+        <img src="https://res.cloudinary.com/dr5knskbb/image/upload/v1785926120/cafe-tostado_ognp1m.webp" alt="Café tostado">
+        <p>
+            Una vez seco, el café reposa para estabilizar su humedad y conservar sus cualidades. Antes del tueste se realiza una nueva selección de los granos para garantizar la máxima calidad. Finalmente, un tueste medio desarrolla todo su potencial, resaltando el dulzor, el equilibrio y las notas características de esta región.
+        </p>
+    </section>
+    <section id="preparacion">
+        <h2 class="text-center">Preparación</h2>
+        <img src="https://res.cloudinary.com/dr5knskbb/image/upload/v1785926926/chemex-cafe-cabecera_n3dyys.webp" alt="Preparación del café">
+
+        <div class="flex items-center justify-center mt-4">
+            <audio controls>
+                <source
+                    src="https://res.cloudinary.com/dr5knskbb/video/upload/v1785926402/backers-perfil-cafe_rawut3.ogg"
+                    type="audio/ogg"
+                />
+                No se puede reproducir el audio en este navegador.
+            </audio>
+        </div>
+        
+        <p>
+            Para disfrutar de este café en su máxima expresión, se recomienda una molienda media y una temperatura de agua entre 90 y 96 °C. La proporción ideal es de 1:15, es decir, 1 gramo de café por cada 15 mililitros de agua. Este equilibrio permite extraer los sabores y aromas característicos del café Borbón Rosado, resaltando su dulzor, acidez equilibrada y notas frutales.
+        </p>
+
+        <p>
+            Para apreciar todo su potencial, se recomienda prepararlo en métodos de filtro como V60, Chemex o Kalita, utilizando agua de buena calidad y recién molido antes de la extracción.
+        </p>
+
+        <p>
+            Para mantener la frescura y el perfil aromático de este café, consérvalo en un recipiente hermético, en un lugar fresco, seco y protegido de la luz directa. Evita la humedad, el calor y la refrigeración. Lo ideal es moler únicamente la cantidad que vayas a preparar en cada ocasión para disfrutar de todo su aroma y sabor.
+        </p>
+    </section>
+    <section id="galeria">
+
+        <h2 class="text-center">Galería</h2>
+        <figure>
+            <img src="https://res.cloudinary.com/dr5knskbb/image/upload/v1785927543/planta-castillo-tambo_jtzizd.webp" alt="Planta café variedad Castillo" />
+            <fieldset>Planta café variedad Castillo</fieldset>
+        </figure>
+
+        <figure>
+            <img src="https://res.cloudinary.com/dr5knskbb/image/upload/v1785927541/cerezas-borbon-rosado_uawxc1.webp" alt="Cerezas de café Borbón Rosado" />
+            <fieldset>Cerezas de café Borbón Rosado</fieldset>
+        </figure>
+
+        <figure>
+            <img src="https://res.cloudinary.com/dr5knskbb/image/upload/v1785927543/fermentacion-cafe_k8jeqv.webp" alt="Proceso de fermentación del café" />
+            <fieldset>Proceso de fermentación del café</fieldset>
+        </figure>
+
+        <figure>
+            <img src="https://res.cloudinary.com/dr5knskbb/image/upload/v1785927542/secadero-cafe_zrcysz.webp" alt="Secadero de café" />
+            <fieldset>Secadero de café</fieldset>
+        </figure>
+
+        <figure>
+            <img src="https://res.cloudinary.com/dr5knskbb/image/upload/v1785927542/pergamino-borbon-rosado_g3pnbx.webp" alt="Café Borbón Rosado en pergamino" />
+            <fieldset>Café Borbón Rosado en pergamino</fieldset>
+        </figure>
+
+    </section>
+        <StickyNavigation />
+</Layout>
+
+<style>
+    @import "tailwindcss";
+    p {
+        @apply p-3 text-pretty text-center;
+    }
+</style>
