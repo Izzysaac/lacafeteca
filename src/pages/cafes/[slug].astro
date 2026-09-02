@@ -4,6 +4,13 @@ import { getCollection, render } from "astro:content";
 export async function getStaticPaths() {
     const cafes = await getCollection("cafes");
 
+    console.log(
+		cafes.map((cafe) => ({
+			id: cafe.id,
+			slug: cafe.data.slug
+		}))
+	);
+
     return cafes.map((cafe) => ({
         params: { slug: cafe.id },
         props: { cafe },
@@ -18,14 +25,8 @@ import Hero from "@components/Hero.astro";
 import StickyNavigation from "@components/StickyNavigation.astro";
 ---
 
-<!-- <Layout theme={cafe.data.theme} title={cafe.data.title}>
-    <Hero hero={cafe.data.hero} title={cafe.data.title} description={cafe.data.description} />
-
-    <img src={cafe.data.origin.image.url} alt={cafe.data.origin.image.alt} />
-    <Content />
-    <StickyNavigation />
+<Layout theme={cafe.data.theme} title={cafe.data.title}>
+    <main class="px-3">
+        <Content />
+    </main>
 </Layout>
-
-<style>
-
-</style> -->

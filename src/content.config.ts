@@ -9,29 +9,40 @@ import { z } from "astro/zod";
 
 // 4. Define a `loader` and `schema` for each collection
 const cafes = defineCollection({
-    loader: glob({ base: "./src/data/cafes", pattern: "**/*.{md,mdx}" }),
+    loader: glob({ base: "./src/content/cafes", pattern: "**/*.{md,mdx}" }),
     schema: z.object({
         slug: z.string(),
         theme: z.string(),
         title: z.string(),
         description: z.string(),
-        hero: z.object({
-            image: z.object({
-                url: z.string(),
-                alt: z.string(),
-            }),
+
+        origen: z.object({
+            productor: z.string(),
             finca: z.string(),
-            origen: z.string(),
+            certificaciones: z.array(z.string()).optional(),
+            maps: z.string(),
+            altitud: z.string(),
+            municipio: z.string(),
+            departamento: z.string(),
+            pais: z.string(),
+            tostador: z.string(),
+        }),
+
+        fichaTecnica: z.object({
             variedad: z.string(),
-            proceso: z.string(),
-            altura: z.number(),
+            fermentación: z.string(),
+            beneficio: z.string(),
+            secado: z.string(),
+            tostion: z.string(),
         }),
-        origin: z.object({
-            image: z.object({
-                url: z.string(),
-                alt: z.string(),
-            }),
+
+        perfilSensorial: z.object({
+            notas: z.string(),
+            acidez: z.string(),
+            cuerpo: z.string(),
+            intensidad: z.string(),
         }),
+
         draft: z.boolean().optional(),
     }),
 });
