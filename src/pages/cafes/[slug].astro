@@ -26,7 +26,10 @@ import StickyNavigation from "@components/StickyNavigation.astro";
 ---
 
 <Layout theme={cafe.data.theme} title={cafe.data.title}>
-    <main class="px-3">
+    {
+        cafe.data.image && <img src={cafe.data.image} alt={cafe.data.title} />
+    }
+    <main>
         <Content />
     </main>
 </Layout>

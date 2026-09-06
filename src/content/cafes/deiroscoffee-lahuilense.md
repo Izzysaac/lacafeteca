@@ -1,5 +1,5 @@
 ---
-slug: 'deiroscoffee-deiro'
+slug: 'deiroscoffee-lahuilense'
 theme: 'deiroscoffee'
 title: 'Deiros Coffee'
 description: |
@@ -50,7 +50,9 @@ perfilSensorial:
 
 ---
 
-DEIRO
+lahuilense
+
+# 🌍 Origen
 
 ## Una finca entre montañas
 

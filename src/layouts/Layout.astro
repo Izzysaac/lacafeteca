@@ -63,9 +63,26 @@ const { theme, title } = Astro.props;
         color: var(--titles);
         font-weight: bold;
         margin: 1rem 0;
+        padding: 0 12px;
+        text-align: center;
     }
+    p {
+        margin: 1rem 0;
+        padding: 0 12px;
+    }   
 
     image{
         width: 100%;
+    }
+
+    audio {
+        width: 100%;
+        padding: 0 12px;
+    }
+
+    .full-screen-img {
+        display: block;
+        width: calc(100vw + 24px); /* Suma los 12px de padding izquierdo y derecho */
+        /* margin-left: -12px;   */
     }
 </style>

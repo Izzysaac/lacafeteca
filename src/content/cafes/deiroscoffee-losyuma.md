@@ -1,5 +1,5 @@
 ---
-slug: 'deiroscoffee-deiro'
+slug: 'deiroscoffee-losyuma'
 theme: 'deiroscoffee'
 title: 'Deiros Coffee'
 description: |
@@ -50,7 +50,9 @@ perfilSensorial:
 
 ---
 
-DEIRO
+LOS YUMA
+
+# 🌍 Origen
 
 ## Una finca entre montañas
 
