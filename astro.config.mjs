@@ -14,7 +14,7 @@ export default defineConfig({
     "/003": "/cafes/deiroscoffee-risto",
     "/004": "/cafes/deiroscoffee-lahuilense",
     "/005": "/cafes/deiroscoffee-elparejo",
-    "/006": "/cafes/deiroscoffee-laspala",
+    "/006": "/cafes/deiroscoffee-laspalas",
     "/007": "/cafes/deiroscoffee-losyuma",
     "/008": "/cafes/deiroscoffee-elparche",
   }
