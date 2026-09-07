@@ -1,5 +1,5 @@
 ---
-slug: 'deiroscoffee-deiro'
+slug: 'deiroscoffee-elvia'
 theme: 'deiroscoffee'
 title: 'Deiros Coffee'
 description: |
