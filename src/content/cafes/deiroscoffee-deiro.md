@@ -52,7 +52,9 @@ perfilSensorial:
 
 DEIRO
 
-## Una finca entre montañas
+en desarrollo... próximamente esta semana
+
+<!-- ## Una finca entre montañas
 
 En las montañas de **Timaná, Huila**, la finca **Bella Vista** se encuentra a **1.700 metros sobre el nivel del mar**, una altitud donde las noches frescas y los días templados permiten que el café madure lentamente. Este ritmo natural favorece el desarrollo de azúcares y una mayor complejidad en la taza.
 
@@ -96,4 +98,4 @@ El clima de Timaná combina días soleados con noches frescas y una distribució
 - 🌋 Suelos fértiles de origen volcánico.
 - 🌦️ Clima de montaña con gran amplitud térmica.
 - 🌱 Producción enfocada en cafés de especialidad.
-- 👨‍🌾 Manejo cuidadoso desde el cultivo hasta la cosecha.
+- 👨‍🌾 Manejo cuidadoso desde el cultivo hasta la cosecha. -->

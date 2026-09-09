@@ -51,3 +51,5 @@ perfilSensorial:
 ---
 
 EL PAREJO
+
+en desarrollo... próximamente esta semana
