@@ -16,6 +16,7 @@ const cafes = defineCollection({
         title: z.string(),
         description: z.string(),
         image: z.string().optional(),
+        color: z.string().optional(),
 
 
         origen: z.object({
