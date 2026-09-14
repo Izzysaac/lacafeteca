@@ -35,7 +35,7 @@ const { theme, title } = Astro.props;
 	body {
 		margin: auto;
 		width: 100%;
-        max-width: 1200px;
+        max-width: 768px;
 		height: 100%;
 		font-family: "lacafeteca", sans-serif;
         font-weight: regular;
@@ -62,6 +62,10 @@ const { theme, title } = Astro.props;
         background-color: var(--background-color);
         color: var(--text);
     }
+
+    h2 {
+        font-size: 1.5rem;
+    }
     h1,
     h2,
     h3,
@@ -78,6 +82,11 @@ const { theme, title } = Astro.props;
         margin: 1rem 0;
         padding: 0 12px;
     }   
+    figcaption {
+        margin: 4px; 
+        padding: 0 8px;
+        font-size: smaller;
+    } 
 
     image{
         width: 100%;
@@ -91,5 +100,9 @@ const { theme, title } = Astro.props;
         display: block;
         width: calc(100vw + 24px); /* Suma los 12px de padding izquierdo y derecho */
         /* margin-left: -12px;   */
+    }
+
+    a {
+        text-decoration: underline;
     }
 </style>

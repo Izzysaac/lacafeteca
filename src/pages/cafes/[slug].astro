@@ -1,15 +1,11 @@
 ---
-import { getCollection, render } from "astro:content";
+import { getCollection, render, type CollectionEntry } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+
+type CafeEntry = CollectionEntry<"cafes">;
 
 export async function getStaticPaths() {
-    const cafes = await getCollection("cafes");
-
-    console.log(
-		cafes.map((cafe) => ({
-			id: cafe.id,
-			slug: cafe.data.slug
-		}))
-	);
+    const cafes: CafeEntry[] = await getCollection("cafes");
 
     return cafes.map((cafe) => ({
         params: { slug: cafe.id },
@@ -17,19 +13,12 @@ export async function getStaticPaths() {
     }));
 }
 
-const { cafe } = Astro.props;
+const { cafe } = Astro.props as { cafe: CafeEntry };
 const { Content } = await render(cafe);
-
-import Layout from "@layouts/Layout.astro";
-import Hero from "@components/Hero.astro";
-import StickyNavigation from "@components/StickyNavigation.astro";
 ---
 
 <Layout theme={cafe.data.theme} title={cafe.data.title}>
-    <!-- {
-        cafe.data.image && <img src={cafe.data.image} alt={cafe.data.title} class="max-w-200 m-auto w-full"/>
-    } -->
-    <main class=`border-4 ${cafe.data.color}`>
+    <main class={`border-4 ${cafe.data.color ?? "border-black"}`}>
         <Content />
     </main>
-</Layout> 
+</Layout>

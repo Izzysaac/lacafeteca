@@ -3,11 +3,14 @@ import { defineConfig } from 'astro/config';
 
 import tailwindcss from '@tailwindcss/vite';
 
+import mdx from "@astrojs/mdx";
+
 // https://astro.build/config
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
+
   redirects: {
     "/001": "/cafes/deiroscoffee-deiro",
     "/002": "/cafes/deiroscoffee-elvia",
@@ -17,5 +20,7 @@ export default defineConfig({
     "/006": "/cafes/deiroscoffee-laspalas",
     "/007": "/cafes/deiroscoffee-losyuma",
     "/008": "/cafes/deiroscoffee-elparche",
-  }
+  },
+
+  integrations: [mdx()]
 });
