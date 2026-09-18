@@ -1,0 +1,118 @@
+---
+slug: 'deiroscoffee-laspalas'
+theme: 'deiroscoffee'
+title: 'Deiros Coffee'
+description: |
+  Café Insignia de Deiro's Coffee
+
+
+origen:
+    productor: "Deiro Gasca Triviño"
+    finca: "Finca Bella Vista"
+    certificaciones:
+        - "Fair Trade"
+        - "Rainforest"
+    maps: "https://maps.app.goo.gl/XBUUdn98hGNbPs566"
+    altitud: "1750"
+    municipio: "Timaná"
+    departamento: "Huila"
+    pais: "Colombia"
+    tostador: "Jose Joaquin Ordoñez"
+
+fichaTecnica:
+    variedad: "Caturra"
+    fermentación: "oxidación de 36h en cereza y 24h despulpado"
+    beneficio: "Lavado"
+    secado: "Marquesina"
+    tostion: "Media"
+
+perfilSensorial:
+    notas: "floral, miel, fruta tropical"
+    acidez: "citrica"
+    cuerpo: "suave"
+    intensidad: "moderada"
+
+
+# hero: 
+#     image: 
+#         url: 'https://res.cloudinary.com/dr5knskbb/image/upload/v1785919029/bakersocffee-hero_nnyhjy.webp'
+#         alt: 'Presentación de Bakers Coffee'
+#     finca: "Finca la Providencia"
+#     origen: "Timaná, Huila Colombia"
+#     variedad: "Borbón Rosado"
+#     proceso: "Lavado"
+#     altura: 1600
+
+# origin:
+#     image: 
+#         url: 'https://res.cloudinary.com/dr5knskbb/image/upload/v1785922459/bakerscoffee-origin-banner_oxcrqc.webp'
+#         alt: 'Planta de café'
+
+---
+
+import Galeria from "@components/Galeria.astro";
+
+export const galeria = [
+    {
+        src: "https://res.cloudinary.com/dr5knskbb/image/upload/v1789718318/natural-03_rtxcaq.webp",
+        alt: "Selección de café natural 01",
+    },
+    {
+        src: "https://res.cloudinary.com/dr5knskbb/image/upload/v1789718315/natural-02_gxtk4b.webp",
+        alt: "Selección de café natural 02",
+    },
+    {
+        src: "https://res.cloudinary.com/dr5knskbb/image/upload/v1789718315/natural-01_szfc8v.webp",
+        alt: "Selección de café natural 03",
+    },
+    {
+        src: "https://res.cloudinary.com/dr5knskbb/image/upload/v1789719788/Jos%C3%A9-F-Duval_valw4r.webp",
+        alt: "1º Juan Valdez - José F. Duval",
+    },
+    {
+        src: "https://res.cloudinary.com/dr5knskbb/image/upload/v1789719788/carlos-sanchez_qyn8so.webp",
+        alt: "2º Juan Valdez - Carlos Sanchez",
+    },
+    {
+        src: "https://res.cloudinary.com/dr5knskbb/image/upload/v1789719788/carlos-casta%C3%B1eda-ceballos_ylfbvz.webp",
+        alt: "3º Juan Valdez - Carlos Castañeda Ceballos",
+    }
+]
+
+<img src="https://res.cloudinary.com/dr5knskbb/image/upload/v1789717833/blend-natural-trazabilidad_xffct9.webp" alt="Ficha técnica" class="full-screen-img" loading="eager" fetchpriority="high" />
+
+<h1 class="text-red-700! text-xl">Las Palas Recolectoras de Café</h1>
+
+<p class="text-center text-xl">Ser **una pala**, dicho de un recolector extremadamente rápido, hábil y rendidor capaz de cosechar una cantidad muy alta de kilos al día</p>
+
+
+<img src="https://res.cloudinary.com/dr5knskbb/image/upload/v1789718279/las-palas-banner_ski3qv.webp" alt="Las Palas - Deiro's Coffee" class="full-screen-img" /> 
+
+## Origen
+{/* <figure>
+    <img src="https://res.cloudinary.com/dr5knskbb/image/upload/v1789550583/evaristo-cafetal_pktiuk.webp" alt="" class="full-screen-img" />
+    <figcaption>Finca *pendiente*, Timaná - Huila</figcaption>
+</figure> */}
+
+
+<figure>
+    <img src="https://res.cloudinary.com/dr5knskbb/image/upload/v1789719791/Cafe-de-Colombia_grkzuu.webp" alt="Logo Federación Nacional de Cafeteros" class="full-screen-img"/>
+    <figcaption>Logo Federación Nacional de Cafeteros</figcaption>
+</figure>
+
+Inspirados en el personaje de Juan Valdez y el logo de la Federación Nacional de Cafeteros, en Deiro' Coffee qusimos hacer una adaptación propia. El personaje representa la tradición y el trabajo de más de 500.000 caficultores de Colombia, la mula "Conchita" acompaña al arriero tradicional en su labor diaria por las montañas. El logotipo de FNC nace del propósito de identificar, proteger y garantizar el origen del café 100% colombiano de alta calidad
+## Galeria
+
+<Galeria images={galeria} />
+
+
+<figure>
+    <video  playsinline alt="Recolección de café" loading="lazy" controls>
+        <source src="https://res.cloudinary.com/dr5knskbb/video/upload/v1789720940/laspalas-blendnatural_pmdij8.mp4" type="video/mp4"/>
+    </video>
+    <figcaption>Recolección de café manual</figcaption>
+</figure>
+
+
+
+<a href="https://deiroscoffee.com/products/evaristos-castillo-tambo" target="_blank" rel="noopener noreferrer" class="block m-auto!  text-center w-fit py-2 px-4 rounded-md bg-amber-900 text-white no-underline! my-16! text-lg font-bold">COMPRAR CAFÉ</a>
