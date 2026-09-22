@@ -34,6 +34,24 @@ perfilSensorial:
 
 ---
 
+import Galeria from "@components/Galeria.astro";
+
+export const galeria = [
+    {
+        src: "https://res.cloudinary.com/dr5knskbb/image/upload/v1790086483/tanque-cafe-lavado_lnxgjz.webp",
+        alt: "Tanque de fermentación del café lavado",
+    },
+    {
+        src: "https://res.cloudinary.com/dr5knskbb/image/upload/v1790086486/tina-cafe-lavado_sece81.webp",
+        alt: "Tina de fermentación del café lavado",
+    },
+    {
+        src: "https://res.cloudinary.com/dr5knskbb/image/upload/v1790086482/cubetas-cafe-lavado_tgh57z.webp",
+        alt: "Cubetas de café lavado",
+    }
+]
+
+
 <img src="https://res.cloudinary.com/dr5knskbb/image/upload/v1790080757/trazabilidad-blend-lavado-losyuma_tiq4qg.webp" alt="Ficha técnica" class="full-screen-img" loading="eager" fetchpriority="high" /> 
 
 <h1 class="text-amber-900! text-xl">Los Yuma - Tribu indígena</h1>
@@ -41,3 +59,16 @@ perfilSensorial:
 <p class="text-center text-xl">Inspirado en las tierras sagradas de San Agustín, un territorio custodiado por la historia indígena y bañado por el río ancestral que los nativos llamaban Yuma. Tributo a las culturas precolombinas que esculpieron el alma de nuestra región.</p>
 
 <img src="https://res.cloudinary.com/dr5knskbb/image/upload/v1790080851/losyuma-blend-lavado_pszjsx.webp" alt="LOS YUMA - Deiro's Coffee" class="full-screen-img" loading="eager" fetchpriority="high" />
+
+## Galeria
+
+<Galeria images={galeria} />
+
+<figure>
+    <video playsinline alt="Secadero en marquesina con café natural" loading="lazy" controls>
+        <source src="https://res.cloudinary.com/dr5knskbb/video/upload/v1790086714/secaderos-lavado_vawoko.mp4" type="video/mp4"/>
+    </video>
+    <figcaption>Secadero en camas africanas</figcaption>
+</figure>
+
+<a href="https://deiroscoffee.com/products/blend-lavado" target="_blank" rel="noopener noreferrer" class="block m-auto!  text-center w-fit py-2 px-4 rounded-md bg-red-800 text-white no-underline! my-16! text-lg font-bold">COMPRAR CAFÉ</a>

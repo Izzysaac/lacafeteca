@@ -50,6 +50,35 @@ perfilSensorial:
 
 ---
 
+import Galeria from "@components/Galeria.astro";
+
+export const galeria = [
+    {
+        src: "https://res.cloudinary.com/dr5knskbb/image/upload/v1790086997/planta-cafe-borbon-rayado-01_pkyjkj.webp",
+        alt: "Planta de café borbón rayado",
+    },
+    {
+        src: "https://res.cloudinary.com/dr5knskbb/image/upload/v1790086995/marra-cafe-borbon-rayado_no21od.webp",
+        alt: "Marra café borbón rayado",
+    },
+    {
+        src: "https://res.cloudinary.com/dr5knskbb/image/upload/v1790086979/cerezas-borbon-rayado-01_fcgmtv.webp",
+        alt: "Cerezas de café borbón rayado",
+    },
+    {
+        src: "https://res.cloudinary.com/dr5knskbb/image/upload/v1790086982/cerezas-borbon-rayado-02_sjl8xl.webp",
+        alt: "Cerezas de café borbón rayado",
+    },
+    {
+        src: "https://res.cloudinary.com/dr5knskbb/image/upload/v1790087002/seleccion-manual-en-cereza_cnypye.webp",
+        alt: "Selección manual en cereza",
+    },
+    {
+        src: "https://res.cloudinary.com/dr5knskbb/image/upload/v1790087004/tanques-de-fermentacion_g4fkx9.webp",
+        alt: "Tanques de fermentación del café borbón rayado",
+    }
+]
+
 <img src="https://res.cloudinary.com/dr5knskbb/image/upload/v1790082798/trazabilidad-borbonrayado-parejo_vdirrf.png" alt="Ficha técnica" class="full-screen-img" loading="eager" fetchpriority="high" /> 
 
 <h1 class="text-amber-900! text-xl">El Parejo - San Juanero</h1>
@@ -57,3 +86,21 @@ perfilSensorial:
 <p class="text-center text-xl">En desarrollo.</p>
 
 <img src="https://res.cloudinary.com/dr5knskbb/image/upload/v1790082808/personaje-parejo_zhdpcw.webp" alt="EL PAREJO - Deiro's Coffee" class="full-screen-img" loading="eager" fetchpriority="high" />
+
+
+<figure>
+    <img src="https://res.cloudinary.com/dr5knskbb/image/upload/v1790086999/planta-cafe-borbon-rayado-02_fow8mp.webp" alt="Cerezas de café borbón rayado" class="full-screen-img"/>
+    <figcaption>Cerezas de café borbón rayado</figcaption>
+</figure>
+
+<figure>
+    <img src="https://res.cloudinary.com/dr5knskbb/image/upload/v1790086983/lote-cafe-borbon-rayado_anndpn.webp" alt="Lote de café borbón rayado" class="full-screen-img"/>
+    <figcaption>Lote de café borbón rayado</figcaption>
+</figure>
+
+## Galeria
+
+<Galeria images={galeria} />
+
+
+<a href="https://deiroscoffee.com/products/borbon-rayado" target="_blank" rel="noopener noreferrer" class="block m-auto!  text-center w-fit py-2 px-4 rounded-md bg-red-800 text-white no-underline! my-16! text-lg font-bold">COMPRAR CAFÉ</a>
