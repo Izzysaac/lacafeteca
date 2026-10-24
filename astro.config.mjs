@@ -20,6 +20,7 @@ export default defineConfig({
     "/006": "/cafes/deiroscoffee-laspalas",
     "/007": "/cafes/deiroscoffee-losyuma",
     "/008": "/cafes/deiroscoffee-elparche",
+    "/009": "/cafes/deiroscoffee-elmohan",
   },
 
   integrations: [mdx()]
