@@ -21,6 +21,8 @@ export default defineConfig({
     "/007": "/cafes/deiroscoffee-losyuma",
     "/008": "/cafes/deiroscoffee-elparche",
     "/009": "/cafes/deiroscoffee-elmohan",
+    "/C26": "/calendario-adviento-2026",
+
   },
 
   integrations: [mdx()]
