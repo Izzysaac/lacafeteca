@@ -50,5 +50,14 @@ const cafes = defineCollection({
     }),
 });
 
+// 4. Define a `loader` and `schema` for each collection
+const ca26 = defineCollection({
+    loader: glob({ base: "./src/content/calendario-adviento-2026", pattern: "**/*.{md,mdx}" }),
+    schema: z.object({
+        slug: z.string(),
+        title: z.string(),
+    }),
+});
+
 // 5. Export a single `collections` object to register your collection(s)
-export const collections = { cafes };
+export const collections = { cafes, ca26 };
