@@ -40,12 +40,12 @@ const calendario = [
             <input type="number" name="dia" id="dia" placeholder="Ingresa el día" class="border-2 border-green-900 rounded-lg p-2 w-full mb-4" />
             <button type="submit" class="bg-green-900 text-white py-2 px-4 rounded-lg hover:bg-green-800 w-full text-2xl">Ver información</button>
         </form>
-         -->
+        -->
         <p class="text-center font-medium text-2xl">Descubre la información del café del dia</p>
-        <div class="grid grid-cols-4 grid-rows-6 gap-4">
+        <div class="grid grid-cols-4 grid-rows-6 gap-4 mb-8">
             {
                 calendario.map((item) => (
-                    <a href={item.url} class="flex items-center justify-center aspect-square overflow-hidden text-5xl border-2 border-green-900 rounded-full text-green-900 no-underline! font-bold">
+                    <a href={`calendario-adviento-2026/dia-${item.dia}`} class="flex items-center justify-center aspect-square overflow-hidden text-5xl border-2 border-green-900 rounded-full text-green-900 no-underline! font-bold">
                         {item.dia}
                         {/* <img src={item.img} alt={`Día ${item.dia}`} /> */}
                     </a>
